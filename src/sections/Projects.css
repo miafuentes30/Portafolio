@@ -1,8 +1,9 @@
 .projects-wrapper {
   position: relative;
   width: 100%;
-  min-height: 100vh; /* ⬅️ Cambia height por min-height */
-  overflow: visible; /* o auto si prefieres */
+  min-height: 100vh; 
+  height: auto;
+  overflow: visible; 
 }
 
 
