@@ -1,0 +1,114 @@
+.projects-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* ⬅️ Cambia height por min-height */
+  overflow: visible; /* o auto si prefieres */
+}
+
+
+.projects-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.project-card-container {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 2rem;
+  color: #222;
+  text-align: center;
+}
+
+.project-card-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 5px rgba(255, 255, 255, 0.4);
+}
+
+.projects-intro {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.project-cards {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  margin-top: 3rem;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.project-card {
+  flex: 1 1 300px;
+  max-width: 400px;
+  min-width: 300px;
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.5rem 1rem;
+  background: #d81b60; 
+  color: #fff;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(216, 27, 96, 0.4); 
+}
+
+.project-card a:hover {
+  background: #ad1457; 
+}
+
+
+.project-card a:hover {
+  opacity: 0.9;
+}
+
+.project-card h3 {
+  color: #d81b60; 
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+  text-shadow: 0 1px 2px rgba(255, 182, 193, 0.3);
+}
+
+
+.project-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.project-card ul {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+

@@ -1,0 +1,59 @@
+.contact-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: transparent;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.star-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-info {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(3px);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.contact-info h2 {
+  color: #d6e92a;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.contact-info p,
+.contact-info a {
+  color: white;
+  margin: 0.5rem 0;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.contact-info a:hover {
+  color: #d6e92a;
+}
+
+.gojo-img {
+  width: 80px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
