@@ -34,7 +34,6 @@ body {
 
 h1 {
   font-size: clamp(1.8rem, 5vw, 2.5rem);
-  line-height: 1.2;
 }
 
 
