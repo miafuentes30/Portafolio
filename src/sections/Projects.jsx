@@ -159,7 +159,7 @@ return (
         </div>
 
         <div className="project-card">
-          <h3>Proyecto 2 - Base de Datos</h3>
+          <h3>Simulación de Reservas Concurrentes de Batas</h3>
           <p>Proyecto académico enfocado en diseño, concurrencia y normalización de bases de datos PostgreSQL.</p>
           <ul>
             <li>PostgreSQL</li>
@@ -170,14 +170,16 @@ return (
         </div>
 
         <div className="project-card">
-          <h3>CSS Lab 4 - Solo CSS</h3>
-          <p>Diseño de un Gojo Gato utilizando únicamente CSS puro.</p>
+          <h3>Sistema de Gestión Bibliotecaria</h3>
+          <p>Este proyecto es una plataforma completa para la gestión de una biblioteca, incluyendo usuarios, libros, préstamos, multas, reservas y eventos, con generación de reportes visuales.</p>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
+            <li>PostgreSQL</li>
+            <li>Python con Flask</li>
+            <li>React + Vite</li>
           </ul>
-          <a href="https://github.com/miafuentes30/CSS-Lab4" target="_blank">Ver en GitHub</a>
+          <a href="https://github.com/miafuentes30/Proyecto-3-BD.git" target="_blank">Ver en GitHub</a>
         </div>
+
 
         <div className="project-card">
           <h3>Raíces de Vida</h3>

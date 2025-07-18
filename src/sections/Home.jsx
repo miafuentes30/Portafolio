@@ -3,6 +3,7 @@ import './Home.css'
 import Button from '../components/Button'
 import MiaImg from '../assets/images/Mia.jpg'
 
+
 const SakuraTree = () => {
   const canvasRef = useRef(null)
   const particles = useRef([])
@@ -222,7 +223,7 @@ const SakuraTree = () => {
         </p>
         <div className="buttons">
           <Button text="Ver proyectos" href="/projects" />
-          <Button text="Aún no tengo CV" variant="outline" />
+          <Button text="Descargar CV" href="/assets/pdf/CV.pdf" download />
         </div>
       </div>
     </div>
