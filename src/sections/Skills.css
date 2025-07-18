@@ -27,7 +27,7 @@
 }
 
 .skills-title {
-  font-size: 2.2rem;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
   margin-bottom: 1rem;
   color: #00e5ff;
   text-shadow: 0 0 5px #00e5ff;
@@ -35,7 +35,7 @@
 
 .skills-intro {
   margin-bottom: 2rem;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
   color: #b2ebf2;
 }
 
@@ -117,7 +117,7 @@
 
 .skills-category h3 {
   color: #00e5ff;
-  font-size: 1.6rem;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
   margin-bottom: 1rem;
   text-shadow: 0 0 5px #00e5ff;
 }

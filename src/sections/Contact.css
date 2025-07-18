@@ -34,7 +34,7 @@
   max-width: 600px;
   width: 100%;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
 .contact-info h2 {
@@ -48,7 +48,7 @@
   color: white;
   margin: 0.5rem 0;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 3vw, 1.4rem);
 }
 
 .contact-info a:hover {

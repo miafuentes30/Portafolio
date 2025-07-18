@@ -1,6 +1,8 @@
 html {
+  font-size: clamp(14px, 1.2vw, 16px);
   scroll-behavior: smooth;
 }
+
 
 body {
   margin: 0;
