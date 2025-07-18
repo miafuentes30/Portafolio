@@ -21,9 +21,9 @@
 .center-card {
   position: relative;
   z-index: 10;
-  max-width: 600px;
+  max-width: 640px;
   width: 90%;
-  padding: 2rem 2.5rem;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(15px);
   border-radius: 20px;
@@ -34,14 +34,14 @@
 }
 
 .center-card h1 {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   color: #b03060;
   text-shadow: 1px 1px 3px rgba(255, 182, 193, 0.4);
   margin-bottom: 1rem;
 }
 
 .subtitle {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   margin: 0 0 1.5rem 0;
   color: #444;
   line-height: 1.5;
@@ -53,6 +53,23 @@
   gap: 1rem;
   flex-wrap: wrap;
 }
+
+@media (max-width: 768px) {
+  .center-card {
+    margin-top: -8vh;
+  }
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .center-card {
+    padding: clamp(1rem, 5vw, 1.5rem);
+  }
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
