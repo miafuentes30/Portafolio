@@ -89,3 +89,15 @@
     font-size: 0.9rem;
   }
 }
+
+.btn-cta {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #ff9eb4;      /* tu rosa */
+  color: #fff !important;    /* asegura que no se ponga morado */
+  text-decoration: none;
+  box-shadow: 0 6px 24px rgba(255, 158, 180, 0.4);
+}
+.btn-cta:hover { filter: brightness(0.95); }
+.btn-cta:visited { color: #fff; }

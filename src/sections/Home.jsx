@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import './Home.css'
 import Button from '../components/Button'
 import MiaImg from '../assets/images/Mia.jpg'
+import { Link } from 'react-router-dom'
 
 
 const SakuraTree = () => {
@@ -222,8 +223,8 @@ const SakuraTree = () => {
           en busca de una oportunidad laboral orientada en el diseño Frontend y Base de Datos.
         </p>
         <div className="buttons">
-          <Button text="Ver proyectos" href="/projects" />
-          <Button text="Descargar CV" href="/assets/pdf/CV.pdf" download />
+            <Link to="/projects" className="btn-cta">Ver proyectos</Link>
+
         </div>
       </div>
     </div>
