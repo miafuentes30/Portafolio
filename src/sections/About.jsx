@@ -14,18 +14,6 @@ function About() {
     const width = canvas.width
     const height = canvas.height
 
-    // Sol 
-    const sun = []
-    const sunBaseX = width * 0.12
-    const sunBaseY = height * 0.2
-    for (let i = 0; i < 40; i++) {
-        sun.push({
-        x: sunBaseX + Math.random() * 40 - 20,
-        y: sunBaseY + Math.random() * 40 - 20,
-        size: Math.random() * 25 + 25,
-        color: `rgba(255, ${190 + Math.random() * 50}, 80, 0.4)`
-        })
-    }
 
     // Nubes 
     const clouds = []
@@ -36,6 +24,19 @@ function About() {
         size: Math.random() * 80 + 50,
         speed: Math.random() * 0.2 + 0.05,
         alpha: Math.random() * 0.2 + 0.05
+        })
+    }
+
+   // Sol 
+    const sun = []
+    const sunBaseX = width * 0.12
+    const sunBaseY = height * 0.2
+    for (let i = 0; i < 40; i++) {
+        sun.push({
+        x: sunBaseX + Math.random() * 40 - 20,
+        y: sunBaseY + Math.random() * 40 - 20,
+        size: Math.random() * 25 + 25,
+        color: `rgba(255, ${190 + Math.random() * 50}, 80, 0.4)`
         })
     }
 
@@ -62,14 +63,6 @@ function About() {
         ctx.fillStyle = grad
         ctx.fillRect(0, 0, width, height)
 
-        // Sol
-        const sunFloat = Math.sin(Date.now() * 0.001) * 10
-        for (const s of sun) {
-        ctx.beginPath()
-        ctx.fillStyle = s.color
-        ctx.arc(s.x, s.y + sunFloat, s.size, 0, Math.PI * 2)
-        ctx.fill()
-        }
 
         //  Nubes
         for (const c of clouds) {
@@ -78,6 +71,15 @@ function About() {
         ctx.beginPath()
         ctx.fillStyle = `rgba(255, 255, 255, ${c.alpha})`
         ctx.arc(c.x, c.y, c.size, 0, Math.PI * 2)
+        ctx.fill()
+        }
+
+        // Sol
+        const sunFloat = Math.sin(Date.now() * 0.001) * 10
+        for (const s of sun) {
+        ctx.beginPath()
+        ctx.fillStyle = s.color
+        ctx.arc(s.x, s.y + sunFloat, s.size, 0, Math.PI * 2)
         ctx.fill()
         }
 

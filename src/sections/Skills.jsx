@@ -1,17 +1,17 @@
 import { useRef, useEffect } from "react"
 import "./Skills.css"
-import htmlIcon from '../assets/icons/html5.svg'
-import cssIcon from '../assets/icons/css3.svg'
-import jsIcon from '../assets/icons/javascript.svg'
-import reactIcon from '../assets/icons/react.svg'
-import pythonIcon from '../assets/icons/python.svg'
-import goIcon from '../assets/icons/go.svg'
+import htmlIcon from '../assets/icons/html5.png'
+import cssIcon from '../assets/icons/css3.jpeg'
+import jsIcon from '../assets/icons/javascript.png'
+import reactIcon from '../assets/icons/react.png'
+import pythonIcon from '../assets/icons/python.png'
+import goIcon from '../assets/icons/go.png'
 import flaskIcon from '../assets/icons/flask.svg'
-import postgresIcon from '../assets/icons/postgresql.svg'
+import postgresIcon from '../assets/icons/postgresql.png'
 import dockerIcon from '../assets/icons/docker.svg'
 import tsIcon from '../assets/icons/typescript.svg'
 import gitIcon from '../assets/icons/git.svg'
-import vscodeIcon from '../assets/icons/vscode.svg'
+import vscodeIcon from '../assets/icons/vscode.jpeg'
 import figmaIcon from '../assets/icons/figma.svg'
 
 const skills = [
